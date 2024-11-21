@@ -100,11 +100,13 @@ header {
 }
 section{
   display: flex;
+  min-height: 70vh;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 70vh;
+  
+ 
   color: beige;
   background-image: linear-gradient(
     0deg,
@@ -128,14 +130,15 @@ footer {
 
 .contenedor {
   display: flex;
+  gap: 2rem;
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
+  flex-direction: column;
 }
 
 .columna {
   flex: 1;
-  margin: 20px;
 }
 
 
@@ -152,12 +155,14 @@ footer {
 
 .barra-contenedor {
   display: flex;
+  gap: 15px;
   align-items: center;
   width: 100%;
 }
 
 .barra {
   flex: 1;
+  width: 100%;
   background-color: #f0f0f0;
   border-radius: 5px;
   overflow: hidden;
@@ -168,7 +173,6 @@ footer {
   content: '';
   display: block;
   height: 20px;
-  width: 100%; /* Ajustar al 100% de la barra padre */
   background-color: #007bff;
   border-radius: 5px;
   width: inherit;
@@ -179,3 +183,5 @@ footer {
   font-weight: bold;
   white-space: nowrap;
 }
+
+
