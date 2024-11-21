@@ -126,38 +126,56 @@ footer {
 
 
 
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.columna {
+  flex: 1;
+  margin: 20px;
+}
 
 
-
-ul {
+.habilidades, .estudios {
   list-style-type: none;
   padding: 0;
 }
 
-li {
-  margin: 5px 10px;
+.habilidad, .estudios li {
+  display: flex;
+  align-items:center;
+  margin: 5px 0;
+}
+
+.barra-contenedor {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .barra {
-  width: 100px; /* Ancho fijo para todas las barras */
+  flex: 1;
   background-color: #f0f0f0;
   border-radius: 5px;
   overflow: hidden;
-  margin-left: 10px;
   position: relative;
 }
 
-.porcentaje {
-  height: 15px;
+.barra::after {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 100%; /* Ajustar al 100% de la barra padre */
   background-color: #007bff;
   border-radius: 5px;
-  position: relative;
+  width: inherit;
 }
 
 .porcentaje-texto {
   margin-left: 10px;
-  margin-top: 5px;
-  font-weight: lighter;
+  font-weight: bold;
+  white-space: nowrap;
 }
