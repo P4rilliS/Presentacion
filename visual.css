@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-h1{ font-size: 3.5em;}
+/*h1{ font-size: 3.5em;}
 h2{ font-size: 2.3em;}
 h3{ font-size: 1.5em;}
 p{ font-size: 1.2em;}
@@ -46,12 +46,12 @@ span {
 
 .menu nav a {
   margin-right: 50px; /* Espacio entre enlaces */
-  text-decoration: none; /* Remover subrayado de enlaces */
-  color: rgb(33, 129, 164);
+  /*text-decoration: none; /* Remover subrayado de enlaces */
+  /*color: rgb(33, 129, 164);
   cursor: pointer;
 }
 /* Añadir subrayado al pasar el puntero */ 
-.menu nav a:hover { 
+/*.menu nav a:hover { 
   text-decoration: underline;
   font-weight: bolder; 
 }
@@ -125,9 +125,6 @@ footer {
   text-align: center;
 }
 
-
-
-
 .contenedor {
   display: flex;
   gap: 2rem;
@@ -183,3 +180,75 @@ footer {
   font-weight: bold;
   white-space: nowrap;
 }
+
+*/
+
+h1{
+  font-size: 3.5em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+main img {
+  /* width: 200px; */
+  height: 150px;
+  background-size: 150px 150px;
+  background-position: center;
+}
+ul li a{
+  background-color: rgb(199, 64, 46);
+  border: 6px solid rgb(199, 64, 46);
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 5px 5px 15px rgb(100, 8, 8);
+  
+}
+
+#encabezado { 
+  column-count: 7; 
+  column-gap: 5px; /* Espacio entre columnas */ 
+  list-style-type: none; /* Eliminar viñetas */ 
+  padding: 10px; 
+  margin: 5px;
+  min-width: auto;
+  background-size: center;
+  /* border: 5px outset rgb(84, 155, 30);} */}
+
+  #encabezado li{
+    padding: 10px;
+    text-align: center;
+    
+  }
+  li:hover{
+    transform: scale(1.2);
+  }
+  
+
+  
+  /*#encabezado li:hover { 
+      /*opacity: 0; /* Opacidad inicial */  
+  /* Efectos al pasar el mouse */ 
+  /*#encabezado li a:hover { 
+    /*transform: scale(2); /* Aumenta el tamaño del enlace */ 
+    /*opacity: 0.8; /* Totalmente visible */  
+  /* #encabezado li:not(:hover) a {  */
+    /*opacity: 0.8;} Opaca los enlaces que no están siendo pasados */
+
+  @media screen and (max-width: 768px) { 
+    .menu-toggle { 
+      display: block; 
+    } 
+    #encabezado { 
+      display: none; 
+      flex-direction: column; 
+      width: 100%; 
+    } 
+    #encabezado li { 
+      margin: 10px 0; 
+      text-align: center; 
+    } 
+    #encabezado.show { 
+      display: flex; 
+    } 
+  }

@@ -1,3 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="./img/logo.png" alt="logo.png">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Proyecto CSS</h1>
+    <img src="./img/portada.jpg" alt="portada">
+    <section>
+      <h2>Servicios</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <ol>
+        <li>Servicio 1</li>
+        <li>Servicio 2</li>
+        <li>Servicio 3</li>
+      </ol>
+    </section>
+    <article>
+      <h2 id="noticias">Noticias</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <ul>
+        <li><img src="" alt=""></li>
+        <li>Noticia 2</li>
+        <li>Noticia 3</li>
+      </ul>
+    </article>
+    <section>
+      <h2>Productos</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <ul>
+        <li>Producto 1</li>
+        <li>Producto 2</li>
+        <li>Producto 3</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Preguntas Frecuentes</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <ol>
+        <li>Pregunta 1</li>
+        <li>Pregunta 2</li>
+        <li>Pregunta 3</li>
+      </ol>
+    </section>
+  </main>
+  <footer>
+    <h3>Todos los derechos reservados</h3>
+    <h3>Contacto</h3>
+    <ul>
+      <li>Facebook</li>
+      <li>Twitter</li>
+      <li>Instagram</li>
+      <li>Linkedin</li>
+      <li>Soporte</li>
+    </ul>
+  </footer>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -12,41 +91,48 @@
       <p class="nombre">Sergio Parilli</p>
       <nav>
         <a href="index.html">Inicio</a>
-        <a href="Sobremi.html">Sobre mi</a>
+        <a href="Sobremi.html">Sobre mí</a>
         <a href="Pproyectos.html">Proyectos</a>
         <a href="Contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
 
-
-    <div class="contacto">
-        <div id="info_list_1" class="info_list_w_icon">
-            <div class="info_block_w_icon">
-                <div class="c1_icon">
-                    <i class="linecons linecons_phone">
-                    </i>
-                </div>
-                <div class="c1_text">
-                    <h4>0424-499-6668</h4>
-                    <p>Telefono Celular</p>
-                </div>
+  <section id="sobre-mi">
+    <h1>Sobre mí</h1>
+    <div class="contenedor">
+      <div class="columna">
+      <h2>Habilidades</h2>
+      <ul class="habilidades">
+        <li>
+          <p>
+            Excel
+            </p>
+          <div class="barra-contenedor">
+            <div class="barra" style="width: 90%">
             </div>
-            <div class="info_block_w_icon">
-                <div class="c1_icon">
-                    <i class="linecons linecons_location">
-                    </i>
-                </div>
-                <div class="c1_text">
-                    <h4>Valencia</h4>
-                    <p>lorem</p>
-                </div>
-            </div>
-
-    <h1>Contacto</h1>
-    <p></p>
-    <form action="https://www.youtube.com/">
-<button><span></span>Enviar </button></form>
+            <p class="porcentaje-texto">90%</p>
+          </div>
+        </li>
+        <li><p>Python</p><div class="barra-contenedor"><div class="barra" style="width: 60%;"></div><p class="porcentaje-texto">60%</p></div></li>
+        <li><p>Html & CSS</p><div class="barra-contenedor"><div class="barra" style="width: 5%;"></div><p class="porcentaje-texto">5%</p></div></li>
+        <li><p>C++</p><div class="barra-contenedor"><div class="barra" style="width: 0%;"></div><p class="porcentaje-texto">0%</p></div></li>
+        <li><p>JavaScript</p><div class="barra-contenedor"><div class="barra" style="width: 0%;"></div><p class="porcentaje-texto">0%</p></div></li>
+      </ul>
+      </div>
+   
+      <div class="columna">
+        <h2>Estudios</h2>
+        <ul class="estudios">
+          <li>ingenieria Nuclear - Universidad de harvard</li>
+          <li>ingenieria Nuclear - Universidad de harvard</li>
+          <li>ingenieria Nuclear - Universidad de harvard</li>
+          <li>ingenieria Nuclear - Universidad de harvard</li>
+          <li>ingenieria Nuclear - Universidad de harvard</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
