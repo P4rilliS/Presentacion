@@ -223,7 +223,7 @@ ul li a{
   li:hover{
     transform: scale(1.2);
   }
-  
+
 
   
   /*#encabezado li:hover { 
@@ -240,7 +240,7 @@ ul li a{
       display: block; 
     } 
     #encabezado { 
-      display: none; 
+    /* display: none;  */
       flex-direction: column; 
       width: 100%; 
     } 
