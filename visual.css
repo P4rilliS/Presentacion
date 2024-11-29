@@ -240,7 +240,7 @@ ul li a{
       display: block; 
     } 
     #encabezado { 
-    /* display: none;  */
+      display: none;
       flex-direction: column; 
       width: 100%; 
     } 
