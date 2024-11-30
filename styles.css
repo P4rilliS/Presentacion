@@ -1,38 +1,92 @@
-body{
-    background-color: rgb(255, 255, 255);
-    padding: 2rem;
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.nav_bar{
+
+.logo {
     display: flex;
-    flex: column;
-    align-items: left;
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: left center;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    color:azure;
-    padding:10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    padding: 8px 12px 8px 12px;
 }
 
-.nav_bar_inicio{
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+.nav_bar_sesion {
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste para que "Inicio" quede al lado del logo */
+.nav_bar_inicio > div {
+    display: flex;
+    align-items: flex-start;
     position: relative;
-    width: 20%;
-
+    margin-left: 1rem; /* Espacio entre el logo y "Inicio" */
 }
 
-.nav.bar.sesion{
-    position:relative;
+.menu_invisible {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 0;
+    top: 100%; /* Desplaza el menú debajo del enlace "Inicio" */
+}
+
+.menu_invisible a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.menu_invisible a img {
+    margin-right: 10px;
+}
+
+.menu_invisible a:hover {
+    background-color: #ddd;
+}
+
+/* Muestra el menú cuando se pasa el mouse sobre "Inicio" */
+.inicio:hover + .menu_invisible,
+.menu_invisible:hover {
+    display: block;
+}
+
+/* Alineación de los elementos dentro de la barra de navegación */
+.nav_bar_sesion a {
+    background-color: #ff9e17;
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+
+.nav_bar_sesion a:hover {
+    background-color: #da8507;
+}
+
+.nav_bar_sesion span {
+    margin-left: 10px;
 }
 
 #encabezado{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 30px 20px;
+    color: #0c0c0c;
+    position: fixed;
     width: 100%;
-    min-height: 3.25rem;
-    margin-left: 98.5;
-    margin-right: 98.5;
-}
+    top: 0;
+    z-index: 1000;}
