@@ -339,3 +339,134 @@ ul .barra_nav a{
       transition: all 0.2s ease;
     }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .logo {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px 8px 12px;
+  }
+  
+  .logo img {
+      height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+  }
+  
+  .nav_bar_sesion {
+      display: flex;
+      align-items: center;
+  }
+  
+  /* Ajuste para que "Inicio" quede al lado del logo */
+  .nav_bar_inicio > div {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      margin-left: 1rem; /* Espacio entre el logo y "Inicio" */
+  }
+  
+  .menu_invisible {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      left: 0;
+      top: 100%; /* Desplaza el menú debajo del enlace "Inicio" */
+  }
+  
+  .menu_invisible a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      transition: background-color 0.3s;
+  }
+  
+  .menu_invisible a img {
+      margin-right: 10px;
+  }
+  
+  .menu_invisible a:hover {
+      background-color: #ddd;
+  }
+  
+  /* Muestra el menú cuando se pasa el mouse sobre "Inicio" */
+  .inicio:hover + .menu_invisible,
+  .menu_invisible:hover {
+      display: block;
+  }
+  
+  /* Alineación de los elementos dentro de la barra de navegación */
+  .nav_bar_sesion a {
+      background-color: #ff9e17;
+      margin-left: 20px;
+      text-decoration: none;
+      padding: 10px;
+      transition: background-color 0.2s;
+  }
+  
+  .nav_bar_sesion a:hover {
+      background-color: #da8507;
+  }
+  
+  .nav_bar_sesion span {
+      margin-left: 10px;
+  }
