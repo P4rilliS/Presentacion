@@ -8,58 +8,65 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <nav id="encabezado">        
-        <div class="logo">
-            <a href="/index.html">
-                <img src="./IMG/logo_black.png" alt="Logo.jpg">
-            </a>
-        </div>
-        <div class="menu">
-            <div class="menu_inicio" >
-                <div class="btn_inicio">
-                    <p class="p_inicio">Inicio</p>
-                </div>
-                <div class="menu_invisible">
-                    <div class="buscar_tecnicos">
-                        <a href="#">
-                            <img src="./SVG/buscar.svg" alt="">
-                            <p>Buscar Tecnicos</p>
-                        </a>
-                    </div>
-                    <div class="registro_para_tecnicos">
-                        <a href="#">
-                            <img src="./SVG/registro.svg" alt="">
-                            <p>Registro para Tecnicos</p>
-                        </a>
-                    </div>
-                    <div class="preguntas_frecuentes">
-                        <a href="#">
-                            <img src="./SVG/preguntas_frecuentes.svg" alt="">
-                            <p>Preguntas Frrecuentes</p>        
-                        </a>
-                    </div>                        
-                </div>
-            </div>        
-            <div class="login">
-                <div class="iniciar_sesion">
-                    <a href="#">
-                        Iniciar Sesion
-                    </a>
-                </div>
-                <div class="bandera">
-                    <span>
-                        <img src="./SVG/venezuela.svg" alt="Icon">
-                        <div class="solo_vzla"> ¡Unicamente Valido en Venezuela!                            
-                        </div>
-                    </span>
+    <nav id="encabezado">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html">
+                    <img class="img-logo" src="./IMG/logo_black.png" alt="Logo.jpg">
+                </a>
+                <div id="lineas">
+                    <span class="linea" onclick="toggleMenu()">☰</span>
                 </div>
             </div>
-        </div>
+            <div class="barra-nav">
+                <div class="barra-nav-inicio">
+                    <div class="btn-inicio">
+                        <p class="p-inicio">Inicio</p>
+                        <div class="menu-invisible" id="menu-invisible">
+                            <div class="btn-menu-invisible">
+                                <a class="link-menu-invisible" href="#">
+                                    <img class= "img-menu-invisible" src="./SVG/buscar.svg" alt="">
+                                    <p class="text-menu-invisible">Buscar Tecnicos</p>
+                                </a>
+                            </div>
+                            <div class="btn-menu-invisible">
+                                <a class="link-menu-invisible" href="#">
+                                    <img class= "img-menu-invisible" src="./SVG/registro.svg" alt="">
+                                    <p class="text-menu-invisible">Registro para Tecnicos</p>
+                                </a>
+                            </div>
+                            <div class="btn-menu-invisible">
+                                <a class="link-menu-invisible" href="#">
+                                    <img class= "img-menu-invisible" src="./SVG/preguntas_frecuentes.svg" alt="">
+                                    <p class="text-menu-invisible">Preguntas Frecuentes</p>        
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="barra-nav-final">
+                    <div class="btn-iniciar-sesion" id="btn-iniciar-sesion">
+                        <a href="#" class="iniciar-sesion">
+                            <p class="p-iniciar-sesion">Iniciar Sesion</p>
+                        </a>
+                    </div>
+                    <div class="bandera">
+                        <span>
+                            <img src="./SVG/venezuela.svg" alt="Icon">
+                            <div class="mensaje"> ¡Unicamente Valido en Venezuela!                            
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>        
+        </div>        
     </nav>
-    <section>
+    <section class="seccion">
         <div class="contenedor">
-            <div class="contenedor_texto">
+            <div class="contenedor-texto">
                 <h1>Te ayudamos a buscar el Técnico <br> en <span id="palabra">Fumigación</span> que necesitas.</h1>
+            </div>
+        </div>
     </section>
 </body>
 </html>
